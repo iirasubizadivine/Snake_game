@@ -121,16 +121,11 @@ export default function BreakoutPage() {
           }}>
             Classic Arcade Action
           </p>
-        </div> 
-        
-        
-        <Link href="/games/breakout/levels" style={{ display: 'inline-block', width: '100%', textDecoration: 'none' }}>
-          <button className="arcade-button">
-            START GAME
-          </button>
-        </Link>
-
-      </main>
+          <Button asChild variant="outline" size="sm">
+            <Link href={issueUrl(41)}>Read the full spec (issue #41)</Link>
+          </Button>
+        </CardContent>
+      </Card>
     </div>
   );
 }
